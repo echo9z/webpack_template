@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    *{
+      padding: 0;
+      margin: 0;
+    }
+    .container{
+      /* 容器大小等于一平的宽 */
+      width: 100vw;
+      height: 100vh;
+      background-color: skyblue;
+      /* 内部为网格布局，对子元素生效 */
+      display: grid;
+      /* 设置行数 和 行数的高度 */
+      /* grid-template-rows: 100px 100px 100px; 写了三个样式，就是前三行高度100px */
+      /* 1fr占整个宽度的 一般 */
+      /* grid-template-rows: 1fr 2fr 1fr; */
+      /* grid-template-rows: repeat(3, 1fr); */
+      grid-template-rows: 100px repeat(2, 1fr); /* 第一行100px高， 其余平分浏览器高度 */
+      /* 设置列数 和 列数的宽度 */
+      /* grid-template-columns: 200px 200px 200px 50%; 形成3行 4列 网格，单位是任意的 */
+      /* grid-template-columns: 1fr 1fr 2fr 1fr; 形成3行 4列 网格，单位是任意的 */
+      /* grid-template-columns: 1fr 1fr 2fr 1fr; */
+      grid-template-columns: 200px repeat(2, 1fr) 200px; /*第一个列和最后一列是200px */
+
+      gap: 10px; /* 网格的行和列 统一的间距10px */
+      /* grid-row-gap: 10px; 行间距 */
+      /* grid-column-gap: 20px; 列间距 */
+    }
+    .item{
+      border: 1px solid red;
+      background-color: tomato;
+      box-sizing: border-box;
+      color: azure;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 60px;
+    }
+    .two {
+      /* two 单元格 跨列合并 2和3列 进行合并 */
+      grid-column: span 2;
+    }
+    .four{
+      /* four单元格 跨行合并 4和8行 合并  */
+      grid-row: span 2;
+    }
+    .five{
+      grid-row: span 2;
+    }
+    .six{
+      /* grid-area网格区域 span 行数 / span 列数  跨行跨列 合并 */
+      grid-area: span 2 / span 2;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- 声明为 grid，则是一个网格布-->
+    <div class="item">1</div>
+    <div class="item two">2</div>
+    <!-- <div class="item">3</div> -->
+    <div class="item four">4</div>
+    <div class="item five">5</div>
+    <div class="item six">6</div>
+    <!-- <div class="item">7</div> -->
+    <!-- <div class="item">8</div> -->
+    <!-- <div class="item">9</div> -->
+    <!-- <div class="item">10</div>
+    <div class="item">11</div> -->
+    <div class="item">12</div>
+  </div>
+</body>
+</html>

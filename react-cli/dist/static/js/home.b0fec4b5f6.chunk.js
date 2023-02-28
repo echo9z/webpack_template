@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkreact_cli=self.webpackChunkreact_cli||[]).push([[177],{6991:function(e,t,l){l.r(t);var c=l(959),a=l(1927),r=l(3483);t.default=()=>{const[e,t]=c.useState("这是home组件");return c.createElement("div",null,c.createElement("h2",{className:"home-title"},e),c.createElement(a.ZP,{theme:{token:{colorPrimary:"#00b96b"}}},c.createElement(r.ZP,null,"按钮")))}}}]);
+//# sourceMappingURL=home.b0fec4b5f6.chunk.js.map

@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkreact_cli=self.webpackChunkreact_cli||[]).push([[443],{6459:function(e,t,c){c.r(t);var l=c(959);t.default=()=>{const[e,t]=l.useState("这是About---组件");return l.createElement("div",null,l.createElement("h2",null,e))}}}]);
+//# sourceMappingURL=about.8de8e84518.chunk.js.map

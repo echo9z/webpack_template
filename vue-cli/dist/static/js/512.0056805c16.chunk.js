@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkvue_cli=self.webpackChunkvue_cli||[]).push([[512],{6512:(u,e,l)=>{l.r(e),l.d(e,{default:()=>c});var n=l(6226),i=l(6050),t=l(3996);const c=(0,n.aZ)({setup:function(){var u=(0,i.iH)(0),e=(0,i.iH)("About页面"),l=function(){u.value++};return function(){return(0,n.Wm)("div",null,[(0,n.Wm)("h2",null,[e.value]),(0,n.Wm)("div",{onClick:(0,t.iM)(l,["self"])},[u.value])])}}})}}]);
+//# sourceMappingURL=512.0056805c16.chunk.js.map
